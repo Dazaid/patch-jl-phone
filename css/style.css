@@ -17,6 +17,10 @@ p, h1, h2{
     -webkit-text-fill-color: transparent;
 }
 
+h1{
+    font-size: 7rem;
+}
+
 p{
     font-size: larger;
 }
@@ -88,4 +92,30 @@ p{
     body{
         background-color: rgb(5, 5, 5); 
     }
+}
+
+#message {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: opacity 0.5s, visibility 0.5s;
+    background-color: black;
+    background: #239b33;
+    background: linear-gradient(to top, #239b33 0%, #31b442 50%, #239b33 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#bkg-msg{
+    position: absolute;
+    top: 2px;
 }
